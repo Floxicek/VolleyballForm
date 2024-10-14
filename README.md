@@ -2,6 +2,16 @@
 
 Script that converts pdfs from wixforms answers to .csv
 
+## Form structure
+
+| Field                         | Answer      |
+| ----------------------------- | ----------- |
+| Jméno a příjmení kapitána/ky: | [Name]      |
+| E-mail:                       | [Email]     |
+| Telefon:                      | [Phone]     |
+| Název družstva:               | [Team Name] |
+| Poznámka (nepovinné):         | [Note]      |
+
 ## Run Locally
 
 1. Clone the project
