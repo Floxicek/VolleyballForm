@@ -44,10 +44,12 @@ with open(f'teams{datetime.now().strftime("%Y")}.csv', 'w') as f:
     csv_writer = writer(f)
     csv_writer.writerow(['Name', 'Email', 'Phone', 'Team Name', 'Note'])
     for file in os.listdir(path_to_pdf):
-        cleaned_text = clean_text(read_pdf(file))
-        info = extract_info(cleaned_text)
-        csv_writer.writerow(info)
+        if file.endswith('.pdf'):
+            cleaned_text = clean_text(read_pdf(file))
+            info = extract_info(cleaned_text)
+            csv_writer.writerow(info)
     f.close()
+    print("Data extracted successfully! To file: ", f.name)
 
 
 
