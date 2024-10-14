@@ -2,6 +2,7 @@
 volleyball/
 # Project specifig
 pdfs/*
+!pdfs/.gitkeep
 *.csv
 
 # Byte-compiled / optimized / DLL files

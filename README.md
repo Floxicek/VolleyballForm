@@ -37,6 +37,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
+6. Script will create a file called teams[year].csv
+
 ## Authors
 
 - [@floxicek](https://www.github.com/Floxicek)
